@@ -1,3 +1,31 @@
+# Instalación de AyReAdminLTE
+
+- git clone https://github.com/wagelvis/AyReAdminLTE.git
+
+- CD AyreAdminLTE
+
+- composer install
+
+- php artisan serve
+
+- http://localhost:8000
+
+
+## Habilitar/deshabilitar modo de depuración (para mostrar los errores de código en pantalla)
+
+- Editar config/app.php
+
+- Cambiar opción "true/false" según se requiera: 'debug' => env('APP_DEBUG', true),
+
+
+## Si se presenta el error: No supported encrypter found. The cipher and / or key length are invalid.
+
+- Copiar .env.example como .env
+
+- php artisan key:henerate
+
+
+
 # Laravel PHP Framework
 
 [![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
